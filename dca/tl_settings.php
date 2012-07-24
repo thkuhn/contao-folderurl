@@ -29,8 +29,8 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = preg_replace('@([,|;]pNewLine)([,|;])@', '$1,folderAlias,languageAlias$2', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
-$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = preg_replace('@([,|;]allowedTags)([,|;])@', '$1,urlKeywords$2', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = preg_replace('@(\bdisableAlias\b)@', '$1,folderAlias,languageAlias', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = preg_replace('@(\ballowedTags\b)@', '$1,urlKeywords', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
 
 
 /**
